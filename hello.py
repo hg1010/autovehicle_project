@@ -3,6 +3,7 @@
 import rospy
 from std_msgs.msg import String
 
+# test
 if __name__=='__main__':
 	try:
 		rospy.init_node('hello_ros')
@@ -16,6 +17,7 @@ if __name__=='__main__':
 			print(msg)
 			p.publish(msg)
 			r.sleep()
+			
 
 	except rospy.ROSInterruptException:
 		pass
